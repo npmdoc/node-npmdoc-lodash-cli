@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://lodash.com/custom-builds"
-
-    >lodash-cli (v4.17.4)</a>
+    <a href="https://lodash.com/custom-builds">lodash-cli (v4.17.4)</a>
 </h1>
 <h4>The Lodash command-line interface.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.lodash-cli">module lodash-cli</a><ol>
 
@@ -130,7 +123,7 @@
   var stamp = _.now();
 
   // Used to pre-populate the build state.
-  var state = _.isPlainObject(options) &#x26;&#x26; options;
+  var state = _.isPlainObject(options) &amp;&amp; options;
 
   var isExcluded = function() {
     return _.every(arguments, function(value) {
@@ -166,67 +159,67 @@
         varDepMap = new Hash(_.cloneDeep(mapping.varDep));
 
     // The path to the source file.
-    var filePath = require.resolve(&#x27;lodash&#x27;);
+    var filePath = require.resolve('lodash');
 
     // Used to specify a custom IIFE to wrap lodash.
-    var iife = getOption(options, &#x27;iife&#x27;);
+    var iife = getOption(options, 'iife');
 
     // Used to match external template files to precompile.
-    var templatePattern = getOption(options, &#x27;template&#x27;, &#x27;&#x27;);
+    var templatePattern = getOption(options, 'template', '');
 
     // Used as the template settings for precompiled templates.
     var templateSettings = (function() {
-      var result = getOption(options, &#x27;settings&#x27;);
+      var result = getOption(options, 'settings');
       return result
-        ? Function(&#x27;return {&#x27; + result.replace(/^\{|\}$/g, &#x27;&#x27;) + &#x27;}&#x27;)()
+        ? Function('return {' + result.replace(/^\{|\}$/g, '') + '}')()
         : _.clone(_.templateSettings);
     }());
 
     // A flag to specify a core build.
-    var isCore = getOption(options, &#x27;core&#x27;);
+    var isCore = getOption(options, 'core');
 
     // A flag to specify only creating the development build.
-    var isDevelopment = getOption(options, [&#x27;-d&#x27;, &#x27;--development&#x27;]);
+    var isDevelopment = getOption(options, ['-d', '--development']);
 
     // A flag to indicate that a custom IIFE was specified.
-    var isIIFE = typeof iife == &#x27;string&#x27;;
+    var isIIFE = typeof iife == 'string';
 
     // A flag to specify creating a source map for the minified source.
-    var isMapped = getOption(options, [&#x27;-m&#x27;, &#x27;--source-map&#x27;]);
+    var isMapped = getOption(options, ['-m', '--source-map']);
 
     // A flag to specify a modularize build.
-    var isModularize = getOption(options, &#x27;modularize&#x27;);
+    var isModularize = getOption(options, 'modularize');
 
     // A flag to specify only creating the minified build.
-    var isProduction = getOption(options, [&#x27;-p&#x27;, &#x27;--production&#x27;]);
+    var isProduction = getOption(options, ['-p', '--production']);
 
     // A flag to specify writing output to standard output.
-    var isStdOut = getOption(options, [&#x27;-c&#x27;, &#x27;--stdout&#x27;]);
+    var isStdOut = getOption(options, ['-c', '--stdout']);
 
     // A flag to specify skipping status updates normally logged to the console.
-    var isSilent = !isBin || isStdOut || getOption(options, [&#x27;-s&#x27;, &#x27;--silent&#x27;]);
+    var isSilent = !isBin || isStdOut || getOption(options, ['-s', '--silent']);
 
     // A flag to specify `_.assign`, `_.bindAll`, and `_.defaults`
-    // are constructed using the &#x22;use strict&#x22; directive.
-    var isStrict = getOption(options, &#x27;strict&#x27;);
+    // are constructed using the "use strict" directive.
+    var isStrict = getOption(options, 'strict');
 
     // A flag to specify a template build.
     var isTemplate = !!templatePattern;
 
     // Used to specify the AMD module ID of lodash used by precompiled templates.
-    var moduleId = getOption(options, &#x27;moduleId&#x27;);
+    var moduleId = getOption(options, 'moduleId');
 
     // Used as the output path for the build.
     var outputPath = _.reduce(options, function(result, value, index) {
       return /^(?:-o|--output)$/.test(value)
         ? path.normalize(options[index + 1])
         : result;
-    }, isModularize ? (&#x27;.&#x27; + path.sep + &#x27;modularize&#x27;) : &#x27;&#x27;);
+    }, isModularize ? ('.' + path.sep + 'modularize') : '');
 
     // Used to specify the ways to export the `lodash` function.
     var exportsOptions = (function() {
-      var result = getOption(options, &#x27;exports&#x27;, buildExports.defaults[isModularize ? &#x27;modularize&#x27; : &#x27;monolithic&#x27;]);
-      if (!isModularize &#x26;&#x26; _.includes(result, &#x27;umd&#x27;)) {
+      var result = getOption(options, 'exports', buildExports.defaults[isModularize ? 'modularize' : 'monolithic']);
+      if (!isModularize &amp;&amp; _.includes(result, 'umd')) {
         result = _.union(result, buildExports.umd);
       }
       return isModularize ? _.take(result, 1) : result;
@@ -252,7 +245,7 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function Hash(properties) {
   return _.transform(properties, function(result, value, key) {
-    result[key] = (_.isPlainObject(value) &#x26;&#x26; !(value instanceof Hash))
+    result[key] = (_.isPlainObject(value) &amp;&amp; !(value instanceof Hash))
       ? new Hash(value)
       : value;
   }, this);
@@ -273,3 +266,4 @@
     ]
 </div>
 </div>
+</body></html>
