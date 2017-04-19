@@ -1,9 +1,14 @@
-# api documentation for  [lodash-cli (v4.17.4)](https://lodash.com/custom-builds)  [![npm package](https://img.shields.io/npm/v/npmdoc-lodash-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-lodash-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-lodash-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-lodash-cli)
+# npmdoc-lodash-cli
+
+#### api documentation for  [lodash-cli (v4.17.4)](https://lodash.com/custom-builds)  [![npm package](https://img.shields.io/npm/v/npmdoc-lodash-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-lodash-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-lodash-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-lodash-cli)
+
 #### The Lodash command-line interface.
 
-[![NPM](https://nodei.co/npm/lodash-cli.png?downloads=true)](https://www.npmjs.com/package/lodash-cli)
+[![NPM](https://nodei.co/npm/lodash-cli.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/lodash-cli)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-lodash-cli/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-lodash-cli_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-lodash-cli/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-lodash-cli/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-lodash-cli/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-lodash-cli/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-lodash-cli/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-lodash-cli/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "John-David Dalton",
-        "email": "john.david.dalton@gmail.com",
         "url": "http://allyoucanleet.com/"
     },
     "bin": {
@@ -30,12 +34,10 @@
     "contributors": [
         {
             "name": "John-David Dalton",
-            "email": "john.david.dalton@gmail.com",
             "url": "http://allyoucanleet.com/"
         },
         {
             "name": "Mathias Bynens",
-            "email": "mathias@qiwi.be",
             "url": "https://mathiasbynens.be/"
         }
     ],
@@ -80,18 +82,15 @@
     "main": "bin/lodash",
     "maintainers": [
         {
-            "name": "jdalton",
-            "email": "john.david.dalton@gmail.com"
+            "name": "jdalton"
         },
         {
-            "name": "mathias",
-            "email": "mathias@qiwi.be"
+            "name": "mathias"
         }
     ],
     "name": "lodash-cli",
     "optionalDependencies": {},
     "preferGlobal": true,
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/lodash/lodash-cli.git"
@@ -101,42 +100,6 @@
     },
     "version": "4.17.4"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module lodash-cli](#apidoc.module.lodash-cli)
-1.  object <span class="apidocSignatureSpan">lodash-cli.</span>util
-
-#### [module lodash-cli.util](#apidoc.module.lodash-cli.util)
-1.  [function <span class="apidocSignatureSpan">lodash-cli.util.</span>Hash (properties)](#apidoc.element.lodash-cli.util.Hash)
-1.  object <span class="apidocSignatureSpan">lodash-cli.util.</span>fs
-1.  object <span class="apidocSignatureSpan">lodash-cli.util.</span>path
-
-
-
-# <a name="apidoc.module.lodash-cli"></a>[module lodash-cli](#apidoc.module.lodash-cli)
-
-
-
-# <a name="apidoc.module.lodash-cli.util"></a>[module lodash-cli.util](#apidoc.module.lodash-cli.util)
-
-#### <a name="apidoc.element.lodash-cli.util.Hash"></a>[function <span class="apidocSignatureSpan">lodash-cli.util.</span>Hash (properties)](#apidoc.element.lodash-cli.util.Hash)
-- description and source-code
-```javascript
-function Hash(properties) {
-  return _.transform(properties, function(result, value, key) {
-    result[key] = (_.isPlainObject(value) && !(value instanceof Hash))
-      ? new Hash(value)
-      : value;
-  }, this);
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
