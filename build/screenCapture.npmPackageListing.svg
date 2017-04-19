@@ -1,21 +1,21 @@
 <svg height="286" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="286" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-19 14:41:17 +0000   229476 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-19 14:41:17 +0000     1819 bytes  LICENSE</tspan>
-<tspan x="10" y="58">  2.  2017-04-19 14:41:17 +0000      504 bytes  README.md</tspan>
-<tspan x="10" y="74">  3.  2017-04-19 14:41:17 +0000   120744 bytes  bin/lodash</tspan>
-<tspan x="10" y="90">  4.  2017-04-19 14:41:17 +0000     4050 bytes  lib/const.js</tspan>
-<tspan x="10" y="106">  5.  2017-04-19 14:41:17 +0000     5570 bytes  lib/listing.js</tspan>
-<tspan x="10" y="122">  6.  2017-04-19 14:41:17 +0000    37719 bytes  lib/mapping.js</tspan>
-<tspan x="10" y="138">  7.  2017-04-19 14:41:17 +0000    21306 bytes  lib/minify.js</tspan>
-<tspan x="10" y="154">  8.  2017-04-19 14:41:17 +0000     2092 bytes  lib/postprocess.js</tspan>
-<tspan x="10" y="170">  9.  2017-04-19 14:41:17 +0000     3940 bytes  lib/preprocess.js</tspan>
-<tspan x="10" y="186"> 10.  2017-04-19 14:41:17 +0000     3228 bytes  lib/util.js</tspan>
-<tspan x="10" y="202"> 11.  2017-04-19 14:41:17 +0000    10790 bytes  npm-shrinkwrap.json</tspan>
-<tspan x="10" y="218"> 12.  2017-04-19 14:41:17 +0000    14299 bytes  package.json</tspan>
-<tspan x="10" y="234"> 13.  2017-04-19 14:41:17 +0000     1950 bytes  template/license.jst</tspan>
-<tspan x="10" y="250"> 14.  2017-04-19 14:41:17 +0000      969 bytes  template/package.jst</tspan>
-<tspan x="10" y="266"> 15.  2017-04-19 14:41:17 +0000      496 bytes  template/readme.jst</tspan>
+<tspan x="10" y="26">  0.  2017-04-19 14:42:23 +0000   229476 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-19 14:42:23 +0000     1819 bytes  LICENSE</tspan>
+<tspan x="10" y="58">  2.  2017-04-19 14:42:23 +0000      504 bytes  README.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-19 14:42:23 +0000   120744 bytes  bin/lodash</tspan>
+<tspan x="10" y="90">  4.  2017-04-19 14:42:23 +0000     4050 bytes  lib/const.js</tspan>
+<tspan x="10" y="106">  5.  2017-04-19 14:42:23 +0000     5570 bytes  lib/listing.js</tspan>
+<tspan x="10" y="122">  6.  2017-04-19 14:42:23 +0000    37719 bytes  lib/mapping.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-19 14:42:23 +0000    21306 bytes  lib/minify.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-19 14:42:23 +0000     2092 bytes  lib/postprocess.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-19 14:42:23 +0000     3940 bytes  lib/preprocess.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-19 14:42:23 +0000     3228 bytes  lib/util.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-19 14:42:23 +0000    10790 bytes  npm-shrinkwrap.json</tspan>
+<tspan x="10" y="218"> 12.  2017-04-19 14:42:23 +0000    14299 bytes  package.json</tspan>
+<tspan x="10" y="234"> 13.  2017-04-19 14:42:23 +0000     1950 bytes  template/license.jst</tspan>
+<tspan x="10" y="250"> 14.  2017-04-19 14:42:23 +0000      969 bytes  template/package.jst</tspan>
+<tspan x="10" y="266"> 15.  2017-04-19 14:42:23 +0000      496 bytes  template/readme.jst</tspan>
 </text>
 </svg>
